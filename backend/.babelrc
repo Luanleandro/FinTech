@@ -1,0 +1,17 @@
+{
+  "presets": ["@babel/preset-env"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "alias": {
+          "@modules": ["./src/modules"],
+          "@shared": ["./src/shared"],
+          "@config": ["./src/config"],
+          "@utils": ["./src/utils"]
+        }
+      }
+    ]
+  ]
+}

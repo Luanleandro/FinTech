@@ -1,0 +1,25 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Invite</title>
+  </head>
+  <style>
+    body { box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; }
+    .container { max-width: 600px; margin: 0 auto; } a { display: block;
+    max-width: 100px; margin-top: 20px; color: lightblue; padding: 8px 12px;
+    text-align: center; text-decoration: none; background-color: darkblue;
+    border: none; border-radius: 10px; }
+  </style>
+  <body>
+    <div class='container'>
+      <h1>Olá, {{name}} você recebeu um convite</h1>
+      <p>Cadastre-se sua nova senha</p>
+      <a
+        href='{{link}}?email={{email}}&userId={{uid}}&token={{token}}'
+        ,
+        target='_blank'
+      >Ativar conta</a>
+    </div>
+  </body>
+</html>
